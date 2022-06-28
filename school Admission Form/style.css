@@ -1,0 +1,263 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #fafafa;
+}
+header{
+    width: 100%;
+    font-family: sans-serif;
+
+}
+.navbar{
+    background: #dbceb6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 ;
+}
+.logo{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    padding: 0 20px;
+    margin-left:10px ;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+.navbar ul li a  {
+text-decoration: none;
+padding: 10px;
+margin: 5px;
+font-size: 1em;
+color: #000;
+}
+
+/* form section  */
+
+section{
+    min-height: 90vh;
+   
+}
+.text-title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    box-shadow: 0 2px 1px  rgba(0, 0, 0, 0.4);
+
+}
+.text-2{
+    color: red;
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+.form-body{
+    width: 100%;
+    padding: 0 15px;
+}
+.form{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 100px 0;
+    padding: 15px;
+    
+
+}
+.form-text{
+    background: #fafafa;
+    font-size: 1.6rem;
+    position: relative;
+    top: -25px;
+    text-transform: capitalize;
+    left: 20px;
+
+    width: 96.5%;
+  padding-left: 40px;
+    display:block;
+}
+.course{
+    padding: 10px 20px;
+  
+
+}
+#new{
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+.form-box{
+    width: 100%;
+   /* display: flex;  */
+ margin: 0 10px;
+ /* padding: 5px; */
+   
+}
+.form-box label{
+    font-size:1.1rem;
+    text-transform: capitalize;
+
+}
+.form-box input{
+    width:20%;
+    padding: 10px 0;
+    margin: 20px 0;
+   
+}
+.box-2 input{
+    width: 40%;
+    margin: 20px;
+
+}
+.box-1 input{
+    width: 25%;
+    margin: 0 10px;
+
+}
+.one-row{
+    display: flex;
+}
+.box-4 input{
+    margin:-40px;
+    padding: 0;
+
+   
+
+}
+.box-3 input{
+    width: 30%;
+    margin: 0 15px;
+
+}
+.box-5 input{
+    width: 40%;
+    margin: 10px 15px;
+}
+span{
+    display: inline-block;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+padding: 20px;
+background: #000;
+color: #fff;
+font-size: 1rem;
+text-align: center;
+}
+
+
+.last-box{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-transform: capitalize;
+    position: relative;
+    top: -60px;
+
+}
+.last-box-text
+{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.select{
+    border: 1px solid #000;
+    padding: 10px;
+    display: inline-block;
+    width: 40%;
+}
+.btn{
+    font-size: 1rem;
+    padding: 10px ;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.last-line{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    top: -40px;
+}
+.left-box{
+padding: 20px 50px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+   
+}
+.input{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-input{
+margin-right:3px ;
+}
+.last-text{
+font-size: 1.5rem;
+text-transform: capitalize;
+}
+.last-btn{
+padding: 12px 23px;
+font-size: 1.3rem;
+margin: 0 14px;
+}
+.last-btn:hover{
+background-color: antiquewhite;
+}
+
+
+
+
+@media (max-width:900px) {
+    .form-box{
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        flex-direction: column;
+    }
+    .form-box input{
+        width: 90%;
+    }
+    .one-row{
+        display: flex;
+    }
+    .box-4 input{
+        margin:0px;
+        padding: 0;
+    
+       
+    
+    }
+}
+.fa-asterisk{
+    color: red;
+    font-size: 0.5rem;
+ position: relative;
+ top: -8px;
+}
