@@ -1,0 +1,51 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+background-color: rgb(0, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 400px;
+    height: 400px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    position: relative;
+    width: 40vw;
+    z-index: 1;
+    background: #BA5370;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F4E2D8, #BA5370);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F4E2D8, #BA5370); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+
+}
+.btn::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+
+background: #FF5F6D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+transition: all 0.5s;
+z-index: -1;
+}
+.btn:hover::after{
+width: 100%;
+
+}
