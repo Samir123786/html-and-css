@@ -1,0 +1,63 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(111, 109, 109);
+}
+.toggle{
+    width: 80px;
+    height: 80px;
+    background: rgb(0, 140, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.toggle::before{
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    box-shadow: 0 25px 0 #fff;
+    margin-top: -50px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.toggle::after{
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.toggle.change{
+    background-color: red;
+    transition: all 0.5s;
+}
+.toggle.change::after{
+transform:translate(0) rotate(-45deg) ;
+transition: all 0.5s;
+margin: 0;
+}
+.toggle.change::before{
+    transform: rotate(45deg) translate(0);
+    transition: all 0.5s;
+    box-shadow: none;
+    margin: 0;
+}
